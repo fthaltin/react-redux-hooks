@@ -1,7 +1,9 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../../types/cart/cart.type";
 
 const INITIAL_STATE = {
-  count: 10
+  count: 10,
+  cartItems: [],
+  test: 'Merhabalar ',
 }
 const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
